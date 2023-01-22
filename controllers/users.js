@@ -4,7 +4,6 @@ import { encrypte, compare } from "../utils/encryption.js";
 import { stringify } from "querystring";
 import fetch from "node-fetch";
 
-// input : { email: 'kobi@gmail.com', password: '1234' }
 export const login = async (req, res) => {
   console.log(`Controllers: Users.login() - body = ${JSON.stringify(req.body)}`);
 
@@ -39,7 +38,6 @@ export const login = async (req, res) => {
   }
 };
 
-// input : { firstName : 'Kobi', lastName: 'Malka', email: 'kobi@gmail.com', password: '123456' }
 export const signup = async (req, res) => {
   console.log(`Controllers: Users.signup() - body = ${JSON.stringify(req.body)}`);
   const userData = req.body.user;
@@ -100,7 +98,6 @@ async function validateRecaptcha(recaptcha, remoteAddress) {
   }
 }
 
-// input : email
 export const sendForgotPasswordEmail = async (req, res) => {
   try {
     const email = req.body.email;
