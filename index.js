@@ -12,6 +12,8 @@ import path from "path";
 import userRoute from "./routes/users.js";
 import treatmentsRoute from "./routes/treatments.js";
 
+// git token = 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
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -57,8 +59,8 @@ app.use(function (req, res, next) {
 
 const port = process.env.PORT || 3000;
 
-const username = process.env.MONGO_DB_USER;
-const password = process.env.MONGO_DB_PASSWORD;
+const username = process.env.MONGO_DB_USER || "shaharf";
+const password = process.env.MONGO_DB_PASSWORD || "JZcHGGWtAuqM0LCm";
 
 const CONNECTION_URL = `mongodb+srv://${username}:${password}@cluster0.a88rnen.mongodb.net/?retryWrites=true&w=majority`;
 
