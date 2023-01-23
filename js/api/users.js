@@ -42,7 +42,7 @@ const signup = async (user, recaptcha) => {
 
     console.log("isSuccess = " + isSuccess)
     if (isSuccess) {
-        location.href = "login"
+        location.href = "sign-in"
     }
 
     document.querySelector("#recaptcha-error").style.display = isSuccess ? "none" : "block"
