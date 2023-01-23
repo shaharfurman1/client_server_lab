@@ -71,7 +71,7 @@
                       <a class="small" href="forgot-password">Forgot Password?</a>
                     </div>
                     <div class="text-center">
-                      <a class="small" href="signup">Create an Account!</a>
+                      <a class="small" href="sign-up">Create an Account!</a>
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@
           const isSuccess = await login(email, password);
           console.log(isSuccess);
           if (isSuccess == true) {
-            location.href = "index";
+            location.href = "dashboard";
           }
         }
       }
