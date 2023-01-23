@@ -27,7 +27,7 @@ forgotPasswordBtn.addEventListener('click', (e) => {
     showMessage("Your password sent to your email, Let's Login", 2000);
     
     setTimeout(() => {
-        location.href = '/login'
+        location.href = '/sign-in'
     }, 2000)
 })
 
