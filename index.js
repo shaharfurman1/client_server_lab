@@ -30,12 +30,12 @@ app.use("/users", userRoute);
 app.use("/treatments", treatmentsRoute);
 
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/html/index.html")));
-app.get("/index", (req, res) => res.sendFile(path.join(__dirname, "/html/index.html")));
+app.get("/dashboard", (req, res) => res.sendFile(path.join(__dirname, "/html/index.html")));
 app.get("/tables", (req, res) => res.sendFile(path.join(__dirname, "/html/tables.html")));
 app.get("/about-us", (req, res) => res.sendFile(path.join(__dirname, "/html/about_us.html")));
 
-app.get("/login", (req, res) => res.sendFile(path.join(__dirname, "/html/login.html")));
-app.get("/signup", (req, res) => res.sendFile(path.join(__dirname, "/html/signup.html")));
+app.get("/sign-in", (req, res) => res.sendFile(path.join(__dirname, "/html/login.html")));
+app.get("/sign-up", (req, res) => res.sendFile(path.join(__dirname, "/html/signup.html")));
 app.get("/forgot-password", (req, res) => res.sendFile(path.join(__dirname, "/html/forgot-password.html")));
 
 app.use(function (req, res, next) {
