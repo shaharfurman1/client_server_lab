@@ -26,7 +26,7 @@ loginBtn.addEventListener('click', (e) => {
         if (isSuccess == true) {
             saveEmailAndPasswordToLocalStorage(email, password)
             setTimeout(() => {
-                location.href = "index"
+                location.href = "dashboard"
             }, 2000)
             return
         }
