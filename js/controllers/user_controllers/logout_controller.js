@@ -7,7 +7,7 @@ if (logoutBtn != null) {
         e.preventDefault()
 
         localStorage.clear()
-        location.href = 'login'
+        location.href = 'sign-in'
     })
 
 
